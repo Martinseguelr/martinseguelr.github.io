@@ -17,21 +17,21 @@
     </item>
     
     <item>
-      <title>Entregas</title>
-      <link>https://martinseguelr.github.io/docs/ejemplo/</link>
+      <title>Unidad 1</title>
+      <link>https://martinseguelr.github.io/docs/encargo1/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://martinseguelr.github.io/docs/ejemplo/</guid>
-      <description>Sección exclusiva para el posteo de los encargos solicitados</description>
+      <guid>https://martinseguelr.github.io/docs/encargo1/</guid>
+      <description>Sección exclusiva para el posteo de los avances respectivos a la unidad de mueblería híbrida.</description>
     </item>
     
     <item>
-      <title>Proyectos</title>
-      <link>https://martinseguelr.github.io/docs/markdown/</link>
+      <title>The Responsible Object</title>
+      <link>https://martinseguelr.github.io/docs/the-responsible-object/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://martinseguelr.github.io/docs/markdown/</guid>
-      <description>Espacio para los proyectos más significativos del semestre</description>
+      <guid>https://martinseguelr.github.io/docs/the-responsible-object/</guid>
+      <description>Presentación realizada del libro &amp;ldquo;The responsible object, A History of Design Ideology for the Future&amp;rdquo;</description>
     </item>
     
   </channel>

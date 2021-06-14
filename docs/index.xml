@@ -43,5 +43,14 @@
       <description>Sección dedicada al  posteo de los avances respectivos a la unidad de cocina molecular.</description>
     </item>
     
+    <item>
+      <title>Unidad 3</title>
+      <link>https://martinseguelr.github.io/docs/unidad-3/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://martinseguelr.github.io/docs/unidad-3/</guid>
+      <description>Sección dedicada al  posteo de los avances respectivos a la unidad de art installation</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Taller de Producto 2021 on Martin Seguel - Taller Producto 2021</title>
-    <link>https://martinseguelr.github.io/docs/</link>
-    <description>Recent content in Taller de Producto 2021 on Martin Seguel - Taller Producto 2021</description>
+    <title>Martin Seguel on Martin Seguel - Taller Producto 2021</title>
+    <link>https://martinseguelr.github.io/</link>
+    <description>Recent content in Martin Seguel on Martin Seguel - Taller Producto 2021</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="https://martinseguelr.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Jun 2020 19:30:08 +1000</lastBuildDate><atom:link href="https://martinseguelr.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fotografías</title>
+      <link>https://martinseguelr.github.io/docs/fotograf%C3%ADas/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://martinseguelr.github.io/docs/fotograf%C3%ADas/</guid>
+      <description>Hechale un vistazo a algunas de mis sesiones de foto y agenda la tuya!</description>
+    </item>
+    
     <item>
       <title>Sobre mí</title>
       <link>https://martinseguelr.github.io/docs/sobre-mi/</link>

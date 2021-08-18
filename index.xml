@@ -8,7 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Jun 2020 19:30:08 +1000</lastBuildDate><atom:link href="https://martinseguelr.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Photo Sessions</title>
+      <title>About me</title>
+      <link>https://martinseguelr.github.io/docs/sobre-mi/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://martinseguelr.github.io/docs/sobre-mi/</guid>
+      <description>Conoce mi historia y algunos de mis trabajos destacados</description>
+    </item>
+    
+    <item>
+      <title>Photography</title>
       <link>https://martinseguelr.github.io/docs/photo-sessions/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
@@ -17,12 +26,12 @@
     </item>
     
     <item>
-      <title>Sobre mí</title>
-      <link>https://martinseguelr.github.io/docs/sobre-mi/</link>
+      <title>S2 - Electrónica Aplicada</title>
+      <link>https://martinseguelr.github.io/docs/electr%C3%B3nica-aplicada/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://martinseguelr.github.io/docs/sobre-mi/</guid>
-      <description>Conoce mi historia y algunos de mis trabajos destacados</description>
+      <guid>https://martinseguelr.github.io/docs/electr%C3%B3nica-aplicada/</guid>
+      <description>Sección particular para los avances, procesos y entregas del ramo EAD</description>
     </item>
     
     <item>

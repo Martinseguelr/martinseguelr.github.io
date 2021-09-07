@@ -588,7 +588,8 @@ Para comenzar la cuarta clase, partimos simulando un circuito con un regulador d
 <h5 id="review-how-to-mine-gold-from-electronics--world-wide-waste-documentary-2508">REVIEW: &ldquo;How to mine gold from electronics | World wide waste&rdquo; Documentary (25/08):</h5>
 <p><a href="https://www.youtube.com/watch?v=4yGPm1U7U6s&amp;t=1s">https://www.youtube.com/watch?v=4yGPm1U7U6s&amp;t=1s</a></p>
 <h5 id="4-encargo-04-0109">4. Encargo 04 (01/09):</h5>
-<p>blink
+<p>Antes de empezar, para dar a conocer el flujo de trabajo realizado y la organización de la información del post, previo a utilizar la placa física y ensamblar componentes en mi protoboard, decidí replicar y diseñar cada uno de los circuitos propuestos en la plataforma de Tinkercard como lo hice en el ramo de electrónica pasado a modo de cometer errores digitalmente y no en la vida real, practicando con la interpretación de esquemáticos y aprovechando de simular el código correspondiente (que se encuentra disponible en cada una de las cápsulas de simulación por si gustan revisarlo). Terminados todos los circuitos y habiendo probado su usabilidad me dediqué simplemente a construirlos (ahorrando tiempo y guiándome de mi propio trabajo). Aunque esta estrategia quizás no sea la más óptima en un futuro cercano, me ayuda personalmente a ordenarme en esta etapa de aprendizaje y tener un feedback instantáneo de lo que estoy haciendo.</p>
+<p>Dicho lo anterior, para comenzar la quinta clase, comenzamos por armar un circuito básico para recordar de a poco la interfaz de arduino, haciendo parpadear en un tiempo variable un sólo led utilizando pines y señales digitales (bastante sencillo pero tuve que empezar a &ldquo;agarrarle la mano&rdquo; a escribir e interpretar las líneas de código).</p>
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/7158o7YNC5E?editbtn=1'
@@ -599,8 +600,8 @@ Para comenzar la cuarta clase, partimos simulando un circuito con un regulador d
     mozallowfullscreen="true"  
     frameborder="0">
     </iframe>    
-</div></p>
-<p>potenciometro
+</div>
+<p>Luego, tomando el ejercicio anterior, le sumamos un potenciómetro (conectando a un pin análogo)con el cual se puede variar la intermitencia del led, aumentando a medida que giramos la perilla y viceversa, siendo casi imperceptible el parpadeo en el punto máximo (todavía bastante sencillo y sin mayores complicaciones al armarlo).
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/aLrKglqPZnY?editbtn=1'
@@ -612,7 +613,7 @@ Para comenzar la cuarta clase, partimos simulando un circuito con un regulador d
     frameborder="0">
     </iframe>    
 </div></p>
-<p>rgb
+<p>Ahora hacemos un salto y pasamos de led´s monocromáticos a uno RGB que pueden emitir cualquier color a partir de los tres colores elementales. En este caso, mediante el código introducido el led parpadea cada un 1s intercalando el rojo, verde y azul infinitamente. Importante recalcar que es la primera vez que utilizo este tipo de led con cuatro salidas las cuales tres deben concetarse  a pines digitales seleccionados.
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/dfazIHwueVJ?editbtn=1'
@@ -624,8 +625,7 @@ Para comenzar la cuarta clase, partimos simulando un circuito con un regulador d
     frameborder="0">
     </iframe>    
 </div></p>
-<p>microfono</p>
-<p>multiples led
+<p>Después continuamos trabajando con led´s normales pero aumentando su cantidad de forma considerable (utilizando 8). En esta oportunidad, cada uno se conecta tal cual se hizo en el primer ejercicio pero ahora el efecto del circuito es emular un avance de la luz de izquierda a derecha encendiéndose de forma intercalada cada led según el anterior. Aquí el código comienza a complejizarse y se hace más evidente su relevancia a la hora de escribir bien cada pin utilizado y la correspondencia de estos fisicamente.
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/gVhjGLiR409?editbtn=1'
@@ -637,7 +637,7 @@ Para comenzar la cuarta clase, partimos simulando un circuito con un regulador d
     frameborder="0">
     </iframe>    
 </div></p>
-<p>led mas ldr
+<p>Seguimos probando con otros componentes y agregamos la fotoresistencia (o ldr) al circuito &ldquo;blink2 realizado en un principio. Este circuito funciona muy parecido al segundo con el potenciómetro pero en este caso la relación de luminosidad del led es en relación a la cantidad de energía lumínica a la que se expone el ldr, aumentando el brillo cuando hay mas luz.
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/dccsHBTAzih?editbtn=1'
@@ -649,7 +649,7 @@ Para comenzar la cuarta clase, partimos simulando un circuito con un regulador d
     frameborder="0">
     </iframe>    
 </div></p>
-<p>tarea rgb
+<p>Realizados los ejercicios de prueba anteriores se plantearon 2 tareas a realizar. En cuanto a la primera se pidió generar un circuito en el cual mediante distintos potenciómetros se pueda modificar manualmente el color emitido por el led rgb. De esta forma, apoyandome en libros de apoyo resolví en incorporar 3 potenciómetro con los cuales se pudieran maneja los canales de rojo, verde y azul de manera independiente para generar la combinación de color deseada. Para corroborar el código de color RGB que estaba siendo utilizado al modificar las perillas, agregué un serial print al monitor desde el cual cada un cierto tiempo se pueden ver los valores recibidos en tiempo real con lo cual se puede tener control visual de los cambios realizados (teniendo en cuenta el espectro de 0 a 255 de cada color al dividir por 4 la señal de la placa de 1024).</p>
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/c3J70dlB7QP?editbtn=1'
@@ -660,8 +660,8 @@ Para comenzar la cuarta clase, partimos simulando un circuito con un regulador d
     mozallowfullscreen="true"  
     frameborder="0">
     </iframe>    
-</div></p>
-<p>tarea knight rider
+</div>
+<p>Y como segunda tarea, nos dejaron el desafió de replicar un juego de luces popularizado por una cinta cinematográfica en donde se genera una ilusión óptica en que los leds &ldquo;avanzan&rdquo; simulando el vaivén de una ola de mar. Para conseguirlo, bastó con conectar cada uno de los leds de alto brillo de la forma que ya hemos visto pero el código fue lo más complejo y que requería entender completamente el objetivo planteado. Para esto, dado que ocuparon 10 leds, utilizé una instrucción &ldquo;for&rdquo; de los pines 2 al 11 en los cuales cada 20 milisegundos se encienden ordenadamente y en forma creciente tres led´s (par el efecto de &ldquo;cola&rdquo;) hasta llegar al último, en donde se duplica el código utilizado pero con un &ldquo;i&ndash;&rdquo; para que se mueva enciendan en el sentido contrario y se genere visualmente el &ldquo;loop&rdquo; o &ldquo;rebote en los bordes&rdquo; deseado.
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/7iWimY2RVVN?editbtn=1'
@@ -673,6 +673,12 @@ Para comenzar la cuarta clase, partimos simulando un circuito con un regulador d
     frameborder="0">
     </iframe>    
 </div></p>
+<p>Sin más, para corroborar el funcionamiento de los ejercicios realizados previamente dejo a continuación una recopilación de la construcción física de cada uno.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/1cx_uohSRFU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 
 </div>
 </div>

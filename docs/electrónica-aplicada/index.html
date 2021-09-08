@@ -586,6 +586,22 @@ Para comenzar la cuarta clase, partimos simulando un circuito con un regulador d
 <p><strong>PREGUNTA: ¿Que cambios harías en el circuito para que el led parpadee más rápido en presencia de luz y más lento cuando no la hay?</strong></p>
 <p>R: En cuanto al funcionamiento, la variación del potenciómetro permite observar que mientras más se aleje el cursor de posición inicial, mayor es el tiempo que transcurre entre un parpadeo y otro del led, siendo imperceptible en un principio pero durando algunos segundos incluso en su punto máximo. Si ahora bien, consideramos el primer caso de estudio con la resistencia de 30k ohms, nos damos cuenta que al aumentar la capacitancia de esta se nota cada vez mejor el parpadeo siendo 50k ohms el nivel óptimo que encuentro yo personalmente para apreciar sin problemas la transición. Dicho esto, respondiendo la pregunta, para que responda el circuito según el cambio de luminosidad, se le reemplaza el potenciómetro por un LDR que permite que mientras más luz hay en el ambiente, más rápido es el parpadeo y vicerversa.</p>
 <h5 id="review-how-to-mine-gold-from-electronics--world-wide-waste-documentary-2508">REVIEW: &ldquo;How to mine gold from electronics | World wide waste&rdquo; Documentary (25/08):</h5>
+
+<iframe id='DOCUMENTAL INVESTIGACIÓN' src='/pdf/doc_oro.pdf'
+frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:100%; height:60vh;"></iframe>
+
+<button onclick="myFunction('DOCUMENTAL INVESTIGACIÓN')" class="button button-primary mb-2" style="width: 100%;">Ver Pantalla Completa</button>
+
+<script>
+    function myFunction(id) {
+      document.getElementById(id).classList.add("full-screen");
+    }
+    document.addEventListener('keydown', function(event){
+	if(event.key === "Escape"){
+        document.getElementById('DOCUMENTAL INVESTIGACIÓN').classList.remove("full-screen");
+	}
+});
+</script>
 <p><a href="https://www.youtube.com/watch?v=4yGPm1U7U6s&amp;t=1s">https://www.youtube.com/watch?v=4yGPm1U7U6s&amp;t=1s</a></p>
 <h5 id="4-encargo-04-0109">4. Encargo 04 (01/09):</h5>
 <p>Antes de empezar, para dar a conocer el flujo de trabajo realizado y la organización de la información del post, previo a utilizar la placa física y ensamblar componentes en mi protoboard, decidí replicar y diseñar cada uno de los circuitos propuestos en la plataforma de Tinkercard como lo hice en el ramo de electrónica pasado a modo de cometer errores digitalmente y no en la vida real, practicando con la interpretación de esquemáticos y aprovechando de simular el código correspondiente (que se encuentra disponible en cada una de las cápsulas de simulación por si gustan revisarlo). Terminados todos los circuitos y habiendo probado su usabilidad me dediqué simplemente a construirlos (ahorrando tiempo y guiándome de mi propio trabajo). Aunque esta estrategia quizás no sea la más óptima en un futuro cercano, me ayuda personalmente a ordenarme en esta etapa de aprendizaje y tener un feedback instantáneo de lo que estoy haciendo.</p>

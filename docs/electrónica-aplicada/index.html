@@ -697,6 +697,7 @@ frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:
 
 <em>EJERCICIOS ARDUINO</em></p>
 <h5 id="5-encargo-05-0809">5. Encargo 05 (08/09):</h5>
+<p>Para el primer ejercicio introductorio a la unidad de motores, comenzamos creando un circuito simple con un servomotor utilizando un código encontrado en la web que permite el movimiento en 180 grados en ambas direcciones luego de un pequeño lapso de tiempo, recorriendo cada ángulo hasta completar la amplitud máxima permitida de forma constante. Aunque en un principio tuve que investigar un poco acerca del funcionamiento de este tipo de motor (que es primera vez que lo utilizo) y el tipo de libreria específica que utiliza junto con las variables correspondientes, lo más &ldquo;difícil&rdquo; o lo que más tiempo me llevo entender fue captar la logica detrás de crear objetos tipo &ldquo;servo&rdquo; y acordarme de la existencia del &ldquo;for&rdquo; para llevar a cabo este tipo de secuencias.</p>
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/5Z1wX4s72l8?editbtn=1'
@@ -708,6 +709,8 @@ frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:
     frameborder="0">
     </iframe>    
 </div>
+<p>Luego de esto, fue el paso de agregarle un poco de complejidad al asunto y tuvimos que agregarle un potenciómetro para modificar y controlar manualmente el ángulo de giro del servomotor, para lo cual fue necesario &ldquo;remapea&rdquo; los datos del potenciómetro como del servo para que se correspondan los valores de entrada y salida según el rango que cada uno de los componentes recibe. Además, para poder visualizar y conocer en tiempo real los ángulos recibidos, agregué un serial print que los imprime periódicamente.</p>
+<p>Ahora bien, en cuanto a un proyecto con el cual se pudiera utilizar este circuito se me viene a la mente su aplicación en controles remotos de juguetes con ruedas o timón y también para el manejo de brazos robóticos como lo sería el KUKA que poseen un centro de rotación variable.
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/jWs9dJc8g25?editbtn=1'
@@ -718,7 +721,8 @@ frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:
     mozallowfullscreen="true"  
     frameborder="0">
     </iframe>    
-</div>
+</div></p>
+<p>Tras haber jugado con un servomotor en los ejercicios anteriores, se nos planteó utilizar un motor de corriente continua a través del uso de un trastistor NPN y un diodo que completan un circuito con un código bastante sencillo para mi sorpresa que permite la rotación máxima del motor al ser conectado a la fuente de poder. Quizás lo más difícil fue entender bien el esquemático que se me hizo un poco enredado y me equivoqué más de una vez en conectar los cables y confundir el tipo de transistor.</p>
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/aEu8T8UO8ET?editbtn=1'
@@ -730,6 +734,7 @@ frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:
     frameborder="0">
     </iframe>    
 </div>
+<p>Y por último, como tarea y desafío, tuvimos que crear un circuito &ldquo;puente H&rdquo; con un relé para tener control del ángulo de giro de un motor CC. De esta forma,
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/eFKArZSYdgH?editbtn=1'
@@ -740,7 +745,7 @@ frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:
     mozallowfullscreen="true"  
     frameborder="0">
     </iframe>    
-</div>
+</div></p>
 
 </div>
 </div>

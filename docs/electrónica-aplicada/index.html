@@ -710,7 +710,7 @@ frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:
     </iframe>    
 </div>
 <p>Luego de esto, fue el paso de agregarle un poco de complejidad al asunto y tuvimos que agregarle un potenciómetro para modificar y controlar manualmente el ángulo de giro del servomotor, para lo cual fue necesario &ldquo;remapea&rdquo; los datos del potenciómetro como del servo para que se correspondan los valores de entrada y salida según el rango que cada uno de los componentes recibe. Además, para poder visualizar y conocer en tiempo real los ángulos recibidos, agregué un serial print que los imprime periódicamente.</p>
-<p>Ahora bien, en cuanto a un proyecto con el cual se pudiera utilizar este circuito se me viene a la mente su aplicación en controles remotos de juguetes con ruedas o timón y también para el manejo de brazos robóticos como lo sería el KUKA que poseen un centro de rotación variable.
+<p>Ahora bien, en cuanto a un proyecto con el cual se pudiera utilizar este circuito se me viene a la mente su aplicación en controles remotos de juguetes con ruedas o timón y también para el manejo de brazos robóticos como lo sería el KUKA que poseen un centro de rotación variable.</p>
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/jWs9dJc8g25?editbtn=1'
@@ -721,7 +721,7 @@ frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:
     mozallowfullscreen="true"  
     frameborder="0">
     </iframe>    
-</div></p>
+</div>
 <p>Tras haber jugado con un servomotor en los ejercicios anteriores, se nos planteó utilizar un motor de corriente continua a través del uso de un trastistor NPN y un diodo que completan un circuito con un código bastante sencillo para mi sorpresa que permite la rotación máxima del motor al ser conectado a la fuente de poder. Quizás lo más difícil fue entender bien el esquemático que se me hizo un poco enredado y me equivoqué más de una vez en conectar los cables y confundir el tipo de transistor.</p>
 <div>
     <iframe 
@@ -1125,6 +1125,7 @@ frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:
 </ul>
 <p><em>Esquemático básico:</em></p>
 <p>Ahora bien, en cuanto a cómo funciona la parte móvil del robot (ya que sus funciones educativas radican en la nube y en la conexión de la placa con un smartphone vía bluetooth), cada uno de los servos incluidos en las extremidades de &ldquo;Sima&rdquo; están conectados al mismo pin ground y de 5V pero difieren en el pin digital correspondiente a cada uno. De esta forma, aunque realmente no sé si las baterías extras incluidas cumplen un rol de &ldquo;backup&rdquo; o completan el suminstro voltáico necesario (ya que en la simulación que realizé más abajo las incluí conectando un suministro de energía de 7.4V al pin &ldquo;Vin&rdquo; de arduino pero al desconectarlo los motores siguen funcionando correctamente), por lo que más me hace sentido es que alimenten a un resorte conectado directamente en la parte superior de la placa que eleva la &ldquo;cabeza&rdquo; del robot. Dado que el juguete cuenta con una placa personalizada (que nunca había visto antes ni mucho menos entenderla todavía por completo) me enfoqué principalmente en diagramar un panorama general de su funcionamiento creando un código sencillo pero eficaz que demostrara los movimientos generados (ya que se incluyen condensadores y otros elementos/chips integrados que no logro reconocer sus unidades/voltajes y/o sus nombres para investigarlos)</p>
+<p><img src="/img/esq_sima.png" alt="referentes"></p>
 <div>
     <iframe 
     src='https://www.tinkercad.com/embed/elD24KINev2?editbtn=1'

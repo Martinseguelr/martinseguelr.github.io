@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Electrónica Aplicada - Martin Seguel - Taller Producto 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://martinseguelr.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.1fa7365ae8c80125fba41c344c6180256e4aa14ab2e38faae3eea8a2b8218925.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-dococumentación">
+      <a href="/docs/">
+        <span>Dococumentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://martinseguelr.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://martinseguelr.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-dococumentación">
+      <a href="/docs/">
+        <span>Dococumentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://martinseguelr.github.io/docs/sobre-mi/">About me</a>
+    </li>
+    
+    <li class="">
+      <a href="https://martinseguelr.github.io/docs/photo-sessions/">Photography</a>
+    </li>
+    
+    <li class="">
+      <a href="https://martinseguelr.github.io/docs/dise%C3%B1o-de-interfaces/">Diseño de Interfaces</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://martinseguelr.github.io/docs/electr%C3%B3nica-aplicada/">Electrónica Aplicada</a>
+    </li>
+    
+    <li class="">
+      <a href="https://martinseguelr.github.io/docs/unidad-1/">Unidad 1: Hybrid Furniture</a>
+    </li>
+    
+    <li class="">
+      <a href="https://martinseguelr.github.io/docs/the-responsible-object/">The Responsible Object</a>
+    </li>
+    
+    <li class="">
+      <a href="https://martinseguelr.github.io/docs/unidad2/">Unidad 2: Food Design</a>
+    </li>
+    
+    <li class="">
+      <a href="https://martinseguelr.github.io/docs/unidad-3/">Unidad 3: Art Installation</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">Electrónica Aplicada</h1>
+<div class="content ">
+  <h5 id="1-encargo-01-1108">1. Encargo 01 (11/08):</h5>
+<p>Para comenzar la primera unidad, luego de una introducción y repaso de conceptos de electrónica en las clases 1 y 2 tuvimos que aplicar los conocimientos vistos en las mismas recreando diferente circuitos básicos (tanto en tinkercard como en arduino físico) con los componentes de los que disponemos cada uno con el fin de refrescar nuestra memoria y volver a familiarizarnos con las herramientas. Ahora bien, en mi caso personal, en clases tuve un bloqueo importante sobre como se unen los cables a los pines de la placa de arduino y el sentido de la carga para colocar correctamente las resistencias y otros elementos. De esta forma, un poco frustrado por no recordar bien lo visto el año pasado, revisé varios videos y articulos sobre electrónica que me ayudaron a poder avanzar en mi tiempo libre con los 7 ejercicios que mostraré a continuación, con los cuales intenté probar con la mayor cantidad de variables para sentirme más cómodo con lo que se viene.</p>
+<p>Antes de mostrar lo realizado, cabe destacar que utilize una <strong>página web</strong> para elegir las resistencias acordes a cada circuito y una imagen que adjunto a continuación para tener en cuenta la diferencias de los colores de los leds, teniendo en cuenta la ley de Ohm (V=I*R) y las de Kirchhoff (SI=0 y SV= 0) para el buen flujo de corriente (aunque quemé 2 leds por no conectar correctamente las resistencias al protoboard, fluyendo la energía de forma excesiva)</p>
+<ul>
+<li><a href="https://www.calculadoraconversor.com/codigo-colores-resistencias/">https://www.calculadoraconversor.com/codigo-colores-resistencias/</a></li>
+</ul>
+<p><img src="/img/leds.jpg" alt="referentes"></p>
+<h6 id="i-led-básico">I. Led básico:</h6>
+<p>Como no puede ser de otra forma, había que comenzar por el principio, encendiendo un sólo led utilizando una resistencia de 220 Ohms.</p>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/basico//1.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/basico//1.JPG" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/basico//1.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/basico//2.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/basico//2.JPG" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/basico//2.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/basico//3.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/basico//3.JPG" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/basico//3.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+<h6 id="ii-led-en-serie">II. Led en serie:</h6>
+<p>Se suma otro led en serie pero manteniendo la resitencia anterior, ya que al colocar unas con mayor resistividad se encendían cada vez menos.
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/2//1.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/2//1.JPG" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/2//1.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/2//2.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/2//2.JPG" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/2//2.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/2//3.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/2//3.JPG" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/2//3.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h6 id="iii-leds--pulsador">III. Led´s + Pulsador:</h6>
+<p>Luego de probar sólo con leds, no me quise quedar sólo con eso y comenzé a probar con algunos de los componentes que venían en mi kit para complejizar cada vez los circuitos anteriores. En este caso, agregue un pulsador para lo cual tuve que agregar más cables para hacer pasar la corriente al presionarlo.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/3//1.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/3//1.JPG" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/3//1.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/3//2.jpg');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/3//2.jpg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/3//2.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/3//3.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/3//3.JPG" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/3//3.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h6 id="iv-leds--potenciómetro">IV. Led´s + Potenciómetro:</h6>
+<p>Después fue turno de probar con un potenciómetro, que al ver a mis compañeros en clase utilizarlos me causó curiosidad utilizarlo, teniendo que revisar bien la función de cada una de sus 3 &ldquo;patas&rdquo; para cerrar el circuito.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/4//1.jpg');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/4//1.jpg" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/4//1.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/4//2.jpg');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/4//2.jpg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/4//2.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/4//3.jpg');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/4//3.jpg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/4//3.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h6 id="v-leds--pulsador--potenciómetro">V. Led´s + Pulsador + Potenciómetro:</h6>
+<p>Estando contento con los ejercicios anteriores, me pregunté&hellip;¿Y si fusiono los circuitos III Y IV, como se vería? Frente a lo cual surge este ciruito híbrido con el busqué hacer que se pudiera regular la intesidad de los led¨s al mantener apretado el pulsador, simulando una máquina que luego de encenderse puede permitir el uso de otras funciones.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/5//1.jpg');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/5//1.jpg" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/5//1.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/5//2.jpg');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/5//2.jpg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/5//2.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/5//3.jpg');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/5//3.jpg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/5//3.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h6 id="vi-leds--pulsador--potenciómetro--piezo">VI. Led´s + Pulsador + Potenciómetro + Piezo:</h6>
+<p>Y como no ha primera sin segunda, realizé este segundo &ldquo;híbrido&rdquo; y último circuito en el que agrege un piezo que encontré por pura casualidad en un cajón. Básicamente, tomando el circuito anterior (VI) quize hacer que emitiera su particular sonido al variar manualmente el potenciómetro y encontrar el punto óptimo de oscilación.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/6//1.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/6//1.JPG" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/6//1.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/6//2.jpg');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/6//2.jpg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/6//2.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/6//3.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/6//3.JPG" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/6//3.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h6 id="vii-leds-en-paralelo">VII. Led´s en paralelo:</h6>
+<p>Y para terminar, realizé este circuito que fue el que más me costó hacer ya que no lograba internalizar el porqué de la colocación de cada elemento desde un punto de vista más teórico y técnico (aunque después de cada intento fallido se hizo más y más evidente su sencillez)</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/7//1.0.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/7//1.0.JPG" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/7//1.0.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/7//1.1.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/7//1.1.JPG" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/7//1.1.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/7//1.2.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/7//1.2.JPG" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/7//1.2.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<h6 id="video-recopilación">Video recopilación:</h6>
+<p>Sin más, dado que una imagen es estática, adjunto este video resumen de cada uno de los circuitos realizados en funcionamiento. Espero lo disfruten!
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/u0PsCDgUWI0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<em>7 EJERCICIOS BÁSICOS || ARDUINO</em></p>
+<h5 id="review-understanding-electricity-documentary-1808">REVIEW: &ldquo;Understanding Electricity&rdquo; Documentary (18/08):</h5>
+<p>Emitido en 1997, este episodio del programa de TV dirigido por Lisa Gannon nos conduce por un viaje breve pero conciso acerca de los fundamentos de la electricidad, su historia y los alcances que tiene en diferentes áreas de la sociedad contemporánea, presentando ejemplos de sus aplicaciones a diferente escalas destacando su carácter escencial e imprecindible para el funcionamiento del mundo actual y nuestro día a día, estableciéndose como una tecnologia que &ldquo;lo cambió todo y lo seguirá haciendo&rdquo;(vino a cambiar todo). Dejando de lado el aspecto antiguo, clásico y más anticuado de las animaciones 3D, los diagramas explicativos y el flujo narrativo del documental, es bastante destacable el esfuerzo por recoger diferentes puntos de vista a cerca de la electricidad (desde quienes arreglan torres eléctricas en helicópteros hasta quienes se encargan de mantener en orden la represa de Hoover Dam, que incluse tuve el lujo de visitar personalmente) y la claridad de las explicaciones más teóricas acerca de aquellos conceptos como la ley de ohm o algunos datos claves que contibuyen a introducirse más en el video.</p>
+<p>En este sentido, el documental es bastante atrapante y fácil de digerir, pasándome muy rápido el tiempo gracias al constante ritmo de temas que se tocan y explican. Más alla de que pudieran haber sido agregado otras o más aplicaciones, personalmente me parecieron acertadas ya que en conjunto logran comunicar el potencial y la responsabilidad que conlleva tanto a nivel individual como global, siendo la incorporación de energía solar para la villa brasileña Boa Sorte y el implante de brazo de Bob Goodman los que más me impactaron y me hicieron reflexionar acerca de los beneficios de la electricidad y su capacidad para cambiar vidas y realidades positivamente, me parece realmente increible encontrar corriente eléctrica en nosotros mismos que nos permiten llevar más alla nuestras propias habilidades y optimizar nuestros modos de vida.</p>
+<p>Sin más, para terminar, me gustaría destacar la relevancia que posee su presencia para las tareas más triviales y complejas que nos podamos imaginar, siendo que si es utilizada correctamente y prestando atención de los fenómenos físicos que esta conlleva, se puede transformar en una super herramienta que agiliza procesos, salva vidas, facilita la comunicación y abre puertas que dificilmente Benjamin Franklin hubiera imaginado.</p>
+<p><a href="https://www.youtube.com/watch?v=mGkU8cHHSMU&amp;list=LL&amp;index=61">https://www.youtube.com/watch?v=mGkU8cHHSMU&amp;list=LL&amp;index=61</a></p>
+<h5 id="2-encargo-02-1808">2. Encargo 02 (18/08):</h5>
+<p><img src="/img/ej3.jpg" alt="referentes"></p>
+<p>Para el desarrollo y simulación del ejercicio propuesto en clases, si bien me sentí un poco más cómodo probando y conectando cables en tinkercard, luego de probar insistentemente con los componentes y no lograr el objetivo de prender correctamente los diodos (más alla de que luego nos avisaran que tinkercard tenia problemas para simularlo si teníamos bien las conexiones) en el proceso de la recreación del circuito me equivoqué tanto al elegir el transistor polarizado correcto (PNP) como reconocer bien cada uno de sus puertos desde el esquematico (E,B,C), al darle el voltaje correcto (50V) a cada uno de los condensadores e incluso llegué a confundir el ánodo y el cátodo de los leds.</p>
+<p>Aunque se pueda ver un poco desordenado el circuito, tomé el consejo de ponerle colores diferentes a cada unión importante y me aseguré de tener claro en mi cabeza la estructura de conexiones que establecí en el protoboard. Dado que estuve muy concentrado en clases, para aprovechar al máximo ese tiempo, me descuidé de tomarle pantallazos a los circuitos fallidos y a los errores que me aparecieron en el camino, por lo que para las próximas entregas lo tendré más presente y me aseguraré de registrar los fallos que involucra este aprendizaje.</p>
+<p>Sin embargo, aunque en el proceso se me quemó uno o los dos leds, se sobrecalentaba uno de los dos condensadores e incluso en repetidas ocaciones se me presentó el error de simulación de tinkercard, finalmente logré encender ambos led (que aparecen con una advertencia de amperaje como fue dicho que estaba &ldquo;bien&rdquo;).</p>
+<p><em>Dificultad percibida:</em> Frustrante y confuso.</p>
+<p><em>Estado:</em> Logrado.</p>
+<p><em>Componentes:</em></p>
+<ul>
+<li>Batería 9V</li>
+<li>Condensador polarizado x2</li>
+<li>Transistor PNP x2</li>
+<li>Resistencias x4 (2x220 y 2x100k)</li>
+<li>Leds x2</li>
+</ul>
+<p><img src="/img/bien.jpg" alt="referentes"></p>
+<p>Link Tinkercard: <a href="https://www.tinkercad.com/things/gjbCgQNEH7y">https://www.tinkercad.com/things/gjbCgQNEH7y</a></p>
+<p><strong>PREGUNTA: ¿Qué función cumple el condensador y el transistor en el circuito. Para qué se utiliza la resistencia de 100K y para que la de 220 ohms?</strong></p>
+<p>R: En primer lugar, el condensador se encarga de almacenar energía y liberarla rápidamente (diferenciandosé de una pila que acumula más pero libera más lento) a medida que existe una diferencia de potencial considerable entre ambos extremos, manteniendose encendida o apagada según la cantidad de electrones que se encuentren en cada lado. Por su parte, el transitor (o resistor de transferencia) se encarga de controlar el flujo de la corriente eléctrica como si de una llave de paso de tratase, modificando la señal de salida respecto al imput introducido al variar el caudal de corriente, por lo que en este caso particular, toma la posición de <em>interrumptor</em> al permitir el cierre y/o abertura del circuito de forma automática.</p>
+<p>Ahora bien, para que el circuito funcione correctamente (como no se pudo simular en tinkercard) ambos componentes señalados deben trabajar en conjunto para hacer parpadear a ambos leds y se requiere utilizar las resistentes correspondientes, de forma tal que las de 220 ohms evitan que se quemen los leds rojos y las de 100k ohms se ubican en el output de los condensadores para regular y disminuir sustancialemnte las corrientes eléctricas remanentes (siendo de gran resistividad pra soportar los &ldquo;saltos&rdquo; de flujo que se producen al cerrarse o abrirse el paso de los condensadores).</p>
+<h5 id="3-encargo-03-2508">3. Encargo 03 (25/08):</h5>
+<p><strong>EJERCICIO #1:</strong>
+<img src="/img/ej1.jpg" alt="referentes">
+Para comenzar la cuarta clase, partimos simulando un circuito con un regulador de voltaje de 5V acompañado a de otros componentes vistos anteriormente, siendo, en esta oportunidad, un ejercicio que para sorpresa mia se me hizo bastante fácil de ensamblar al punto que en el primer intento de simulación me funcionó perfectamente. Aunque me tomó poco tiempo, en el proceso de armado fui conciente de los errores que tuve en las clases pasadas y traté de ir paso a paso revisando constantemente el esquemático para no acumular errores de &ldquo;arrastre&rdquo;. Dado que me resultó a la primera, el circuito que ven a continuación es el primer y único intento que realizé por lo que no recopilé dificultades o errores al construirlo.</p>
+<p><em>Dificultad percibida:</em> Rápido y ágil.</p>
+<p><em>Estado:</em> Logrado.</p>
+<p><em>Componentes:</em></p>
+<ul>
+<li>Batería 9V</li>
+<li>Condensador polarizado x2</li>
+<li>Regulador de 5V LM7805</li>
+<li>Resistencia 680</li>
+<li>Led</li>
+</ul>
+<p><img src="/img/5volt.png" alt="referentes"></p>
+<p>Link Tinkercard: <a href="https://www.tinkercad.com/things/bY3KAgzDOus-clase-4-1">https://www.tinkercad.com/things/bY3KAgzDOus-clase-4-1</a></p>
+<p><strong>PREGUNTA: ¿Cual es la función de este circuito?</strong></p>
+<p>R: Según lo que he podido entender y de lo que he investigado, dado que el regulador LM7805 se encarga de recibir un voltaje mayor al que transmite de forma constante en su salida (liberando el resto de energía por su parte superior metálica), el circuito podría decirse que tiene el fin de regular/corregir una señal de 9V producidas por la batería a una estable y precisa de 5V (como los últimos dígitos de su código numérico lo indican: LM7805). De esta forma, el único led incluido se instaura como indicador de funcionamiento y los condensadores por su parte se encargan de filtrar la tensión, en donde el de la izquierda lo hace segun la batería y el de la derecha se encarga de hacerlo respecto a al flujo &ldquo;limpio&rdquo; para corroborar la estabilidad esperada.</p>
+<p><strong>EJERCICIO #2:</strong>
+<img src="/img/ej2.jpg" alt="referentes"></p>
+<p>Como segundo ejercicio, se planteó un circuito bastante más complejo que idealmente funcionaría con un micrófono para recibir señales externas y modificar los patrones de iluminación de los leds. Al igual que el ejercicio anterior, logré terminarlo en un solo intento aunque me tomó mucho más tiempo y me quemó el cerebro luego de la hora de clases. A primera vista me pareció bastante intimidante (eligiendo el protoboard grande y no el estandar como antes) pero a medida que lo fui descomponiendo en partes me di cuenta de lo fácil que era y que simplemente tenía que ser ordenado para hacerlo funcionar, prestándole harta atención al esquemático y a la posición de cada elemento. Dado que Tinkercard no posee un micrófono y yo hasta entonces tampoco, decidí jugar y utilizar diferentes componentes de entrada como lo son el pulsador, el potenciómetro y el LDR para visualizar las variaciones de potencial eléctrico que reciben los leds a medida que reciben información del mundo exterior, encendiéndose y apagándose a la par de mi voz si fuera ocupado el micrófono.</p>
+<p><em>Dificultad percibida:</em> Desafiante pero muy realizable.</p>
+<p><em>Estado:</em> Logrado.</p>
+<p><em>Componentes:</em></p>
+<ul>
+<li>Batería 9V</li>
+<li>Transistor NPN x5</li>
+<li>Condensador</li>
+<li>Resistencias x7 (1k x4, 10k x2, 1M x1)</li>
+<li>Led x4</li>
+<li>Pulsador/Fotoresistencia/Potenciómetro</li>
+</ul>
+<p><img src="/img/mic2.png" alt="referentes"></p>
+<p>Link Tinkercard: <a href="https://www.tinkercad.com/things/kaZXsqGW5Al-clase-4-2">https://www.tinkercad.com/things/kaZXsqGW5Al-clase-4-2</a></p>
+<p><strong>EJERCICIO #3:</strong>
+<img src="/img/ej3_3.jpg" alt="referentes"></p>
+<p>Y como tercer y último ejercicio, tuvimos que realizar nuestro primer ejercicio con el chip 555 para el cual me fue necesario guiarme con un diagrama en internet sobre el orden y significado de cada uno de los 8 números que se encuentran en él, evitando problemas de confusión y enredo con la organización de estos en el esquemático entregado que están dispuestos para &ldquo;facilitar&rdquo; (o no tanto a primera vista) su entendimiento. Durante el proceso de construcción no tuve mayor dificultad o errores del programa mas que confundirme un poco con donde colocar los cables y distrubuir lo mejor posible los componentes en el protoboard para tener todo en su lugar. En este sentido, el circuito comenzó utilizando una resistencia de 30k ohms cerca del condensador luego de corroborar su buen funcionamiento se cambió por un potenciómetro que permite visualizar de mejor forma el parpadeo del led y variar su intensidad de onda manualmente como se puede observar en las dos imágenes a continuación.</p>
+<p><em>Dificultad percibida:</em> Complejo y desafiante.</p>
+<p><em>Estado:</em> Logrado.</p>
+<p><em>Componentes:</em></p>
+<ul>
+<li>Batería 9V</li>
+<li>Condensador polarizado</li>
+<li>Chip Temporizador 555</li>
+<li>Resistencias x3 (380 x1, 1k x1, 30k x1)</li>
+<li>Potenciómetro</li>
+<li>Led</li>
+</ul>
+<p><img src="/img/simple.png" alt="referentes"></p>
+<p><img src="/img/4simple.png" alt="referentes"></p>
+<p>Link Tinkercard: <a href="https://www.tinkercad.com/things/3HkknTqD19L-clase-4-3-con-potenciometro">https://www.tinkercad.com/things/3HkknTqD19L-clase-4-3-con-potenciometro</a></p>
+<p><strong>PREGUNTA: ¿Que cambios harías en el circuito para que el led parpadee más rápido en presencia de luz y más lento cuando no la hay?</strong></p>
+<p>R: En cuanto al funcionamiento, la variación del potenciómetro permite observar que mientras más se aleje el cursor de posición inicial, mayor es el tiempo que transcurre entre un parpadeo y otro del led, siendo imperceptible en un principio pero durando algunos segundos incluso en su punto máximo. Si ahora bien, consideramos el primer caso de estudio con la resistencia de 30k ohms, nos damos cuenta que al aumentar la capacitancia de esta se nota cada vez mejor el parpadeo siendo 50k ohms el nivel óptimo que encuentro yo personalmente para apreciar sin problemas la transición. Dicho esto, respondiendo la pregunta, para que responda el circuito según el cambio de luminosidad, se le reemplaza el potenciómetro por un LDR que permite que mientras más luz hay en el ambiente, más rápido es el parpadeo y vicerversa.</p>
+<h5 id="review-how-to-mine-gold-from-electronics--world-wide-waste-documentary-2508">REVIEW: &ldquo;How to mine gold from electronics | World wide waste&rdquo; Documentary (25/08):</h5>
+
+<iframe id='DOCUMENTAL INVESTIGACIÓN' src='/pdf/doc_oro.pdf'
+frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:100%; height:60vh;"></iframe>
+
+<button onclick="myFunction('DOCUMENTAL INVESTIGACIÓN')" class="button button-primary mb-2" style="width: 100%;">Ver Pantalla Completa</button>
+
+<script>
+    function myFunction(id) {
+      document.getElementById(id).classList.add("full-screen");
+    }
+    document.addEventListener('keydown', function(event){
+	if(event.key === "Escape"){
+        document.getElementById('DOCUMENTAL INVESTIGACIÓN').classList.remove("full-screen");
+	}
+});
+</script>
+<p><a href="https://www.youtube.com/watch?v=4yGPm1U7U6s&amp;t=1s">https://www.youtube.com/watch?v=4yGPm1U7U6s&amp;t=1s</a></p>
+<h5 id="4-encargo-04-0109">4. Encargo 04 (01/09):</h5>
+<p>Antes de empezar, para dar a conocer el flujo de trabajo realizado y la organización de la información del post, previo a utilizar la placa física y ensamblar componentes en mi protoboard, decidí replicar y diseñar cada uno de los circuitos propuestos en la plataforma de Tinkercard como lo hice en el ramo de electrónica pasado a modo de cometer errores digitalmente y no en la vida real, practicando con la interpretación de esquemáticos y aprovechando de simular el código correspondiente (que se encuentra disponible en cada una de las cápsulas de simulación por si gustan revisarlo). Terminados todos los circuitos y habiendo probado su usabilidad me dediqué simplemente a construirlos (ahorrando tiempo y guiándome de mi propio trabajo). Aunque esta estrategia quizás no sea la más óptima en un futuro cercano, me ayuda personalmente a ordenarme en esta etapa de aprendizaje y tener un feedback instantáneo de lo que estoy haciendo.</p>
+<p>Dicho lo anterior, para comenzar la quinta clase, comenzamos por armar un circuito básico para recordar de a poco la interfaz de arduino, haciendo parpadear en un tiempo variable un sólo led utilizando pines y señales digitales (bastante sencillo pero tuve que empezar a &ldquo;agarrarle la mano&rdquo; a escribir e interpretar las líneas de código).</p>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/7158o7YNC5E?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<p>Luego, tomando el ejercicio anterior, le sumamos un potenciómetro (conectando a un pin análogo)con el cual se puede variar la intermitencia del led, aumentando a medida que giramos la perilla y viceversa, siendo casi imperceptible el parpadeo en el punto máximo (todavía bastante sencillo y sin mayores complicaciones al armarlo).
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/aLrKglqPZnY?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div></p>
+<p>Ahora hacemos un salto y pasamos de led´s monocromáticos a uno RGB que pueden emitir cualquier color a partir de los tres colores elementales. En este caso, mediante el código introducido el led parpadea cada un 1s intercalando el rojo, verde y azul infinitamente. Importante recalcar que es la primera vez que utilizo este tipo de led con cuatro salidas las cuales tres deben concetarse  a pines digitales seleccionados.
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/dfazIHwueVJ?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div></p>
+<p>Después continuamos trabajando con led´s normales pero aumentando su cantidad de forma considerable (utilizando 8). En esta oportunidad, cada uno se conecta tal cual se hizo en el primer ejercicio pero ahora el efecto del circuito es emular un avance de la luz de izquierda a derecha encendiéndose de forma intercalada cada led según el anterior. Aquí el código comienza a complejizarse y se hace más evidente su relevancia a la hora de escribir bien cada pin utilizado y la correspondencia de estos fisicamente.
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/gVhjGLiR409?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div></p>
+<p>Seguimos probando con otros componentes y agregamos la fotoresistencia (o ldr) al circuito &ldquo;blink2 realizado en un principio. Este circuito funciona muy parecido al segundo con el potenciómetro pero en este caso la relación de luminosidad del led es en relación a la cantidad de energía lumínica a la que se expone el ldr, aumentando el brillo cuando hay mas luz.
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/dccsHBTAzih?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div></p>
+<p>Realizados los ejercicios de prueba anteriores se plantearon 2 tareas a realizar. En cuanto a la primera se pidió generar un circuito en el cual mediante distintos potenciómetros se pueda modificar manualmente el color emitido por el led rgb. De esta forma, apoyandome en libros de apoyo resolví en incorporar 3 potenciómetro con los cuales se pudieran maneja los canales de rojo, verde y azul de manera independiente para generar la combinación de color deseada. Para corroborar el código de color RGB que estaba siendo utilizado al modificar las perillas, agregué un serial print al monitor desde el cual cada un cierto tiempo se pueden ver los valores recibidos en tiempo real con lo cual se puede tener control visual de los cambios realizados (teniendo en cuenta el espectro de 0 a 255 de cada color al dividir por 4 la señal de la placa de 1024).</p>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/c3J70dlB7QP?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<p>Y como segunda tarea, nos dejaron el desafió de replicar un juego de luces popularizado por una cinta cinematográfica en donde se genera una ilusión óptica en que los leds &ldquo;avanzan&rdquo; simulando el vaivén de una ola de mar. Para conseguirlo, bastó con conectar cada uno de los leds de alto brillo de la forma que ya hemos visto pero el código fue lo más complejo y que requería entender completamente el objetivo planteado. Para esto, dado que ocuparon 10 leds, utilizé una instrucción &ldquo;for&rdquo; de los pines 2 al 11 en los cuales cada 20 milisegundos se encienden ordenadamente y en forma creciente tres led´s (par el efecto de &ldquo;cola&rdquo;) hasta llegar al último, en donde se duplica el código utilizado pero con un &ldquo;i&ndash;&rdquo; para que se mueva enciendan en el sentido contrario y se genere visualmente el &ldquo;loop&rdquo; o &ldquo;rebote en los bordes&rdquo; deseado.</p>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/7iWimY2RVVN?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<p>Sin más, para corroborar el funcionamiento de los ejercicios realizados previamente dejo a continuación una recopilación de la construcción física de cada uno.</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/1cx_uohSRFU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<em>EJERCICIOS ARDUINO</em></p>
+<h5 id="5-encargo-05-0809">5. Encargo 05 (08/09):</h5>
+<p>Para el primer ejercicio introductorio a la unidad de motores, comenzamos creando un circuito simple con un servomotor utilizando un código encontrado en la web que permite el movimiento en 180 grados en ambas direcciones luego de un pequeño lapso de tiempo, recorriendo cada ángulo hasta completar la amplitud máxima permitida de forma constante. Aunque en un principio tuve que investigar un poco acerca del funcionamiento de este tipo de motor (que es primera vez que lo utilizo) y el tipo de libreria específica que utiliza junto con las variables correspondientes, lo más &ldquo;difícil&rdquo; o lo que más tiempo me llevo entender fue captar la logica detrás de crear objetos tipo &ldquo;servo&rdquo; y acordarme de la existencia del &ldquo;for&rdquo; para llevar a cabo este tipo de secuencias.</p>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/5Z1wX4s72l8?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<p>Luego de esto, fue el paso de agregarle un poco de complejidad al asunto y tuvimos que agregarle un potenciómetro para modificar y controlar manualmente el ángulo de giro del servomotor, para lo cual fue necesario &ldquo;remapea&rdquo; los datos del potenciómetro como del servo para que se correspondan los valores de entrada y salida según el rango que cada uno de los componentes recibe. Además, para poder visualizar y conocer en tiempo real los ángulos recibidos, agregué un serial print que los imprime periódicamente.</p>
+<p>Ahora bien, en cuanto a un proyecto con el cual se pudiera utilizar este circuito se me viene a la mente su aplicación en controles remotos de juguetes con ruedas o timón y también para el manejo de brazos robóticos como lo sería el KUKA que poseen un centro de rotación variable.</p>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/jWs9dJc8g25?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<p>Tras haber jugado con un servomotor en los ejercicios anteriores, se nos planteó utilizar un motor de corriente continua a través del uso de un trastistor NPN y un diodo que completan un circuito con un código bastante sencillo para mi sorpresa que permite la rotación máxima del motor al ser conectado a la fuente de poder. Quizás lo más difícil fue entender bien el esquemático que se me hizo un poco enredado y me equivoqué más de una vez en conectar los cables y confundir el tipo de transistor.</p>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/aEu8T8UO8ET?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<p>Y por último, como tarea y desafío, tuvimos que intentar crear un circuito &ldquo;puente H&rdquo; con 4 relés para tener control de giro de un motor CC sin interruptores. Aunque traté de diferentes formas, se me hizo muy complejo entender en primer lugar la conexión de un solo relé (diferenciándose los DPDT y los SPDT) por lo que sólo pude llegar hasta 2 (que no sé si eran los adecuados ya que tampoco se especificaba en el encargo) los cuales permiten correctamente el funcionamiento del motor en un sentido pero no logré conseguir que lo hicieran en el sentido contrario. Le dediqué mucho tiempo a investigar y buscar los errores que estaba cometiendo pero por tiempo sólo alcanzo a presentar el tinkercard que está a continuación. Realmente me gustaría que lo pudieramos revisar en conjunto en una clase ya que me pareció muy interesante el potencial que tienen estos componentes para permitir conexiones entre señales sin ninguna iteración física sino que automática y programable (ya que funcionan como un switch).</p>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/eFKArZSYdgH?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<p>Dicho esto, adjunto un pequeño video recopilatorio de los ejercicios que pude realizar físicamente segÚn los componentes que dispongo a día de hoy.</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ZNPDkkirpmw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<em>EJERCICIOS MOTOR SERVO Y DC</em></p>
+<h5 id="6-encargo-06-2209">6. Encargo 06 (22/09):</h5>
+<p><strong>REFERENTES ARDUINO</strong>
+​</p>
+<p>En cuanto a las aplicaciones de la placa arduino en diferentes proyectos de diversas escalas, luego de investigar un buen rato lo que más me llamó la atención y me pareció muy interesante es lo que podría llamarse &ldquo;Entornos dinámicos y diseño de fachadas inteligentes&rdquo; que se basa en el estudio y desarrollo de estructuras reconfigurables que buscan mejorar las experiencias sociales y físicas de los ocupantes/espectadores mediantes sus propias interacciones con dichas instalaciones. Dentro de esta &ldquo;área de estudio&rdquo; (ligada a la arquitectura y el diseño de galerías) seleccioné cinco proyectos encontrados en la web que trabajan este tema de forma similar pero todos con un enfoque diferenciador. De esta forma, a continuación dejo los links de las páginas web en donde se detalla cada uno de ellos en profundidad junto con los componentes electrónicos que en ellos se utilizan.</p>
+<ol>
+<li>Light Responsive Origami Facade (IAAC)</li>
+</ol>
+<p><img src="/img/pab.jpg" alt="referentes"></p>
+<p>Link: <a href="https://www.behance.net/gallery/19085985/Light-Responsive-Origami-Facade">https://www.behance.net/gallery/19085985/Light-Responsive-Origami-Facade</a></p>
+<ol start="2">
+<li>Cell Responsive Wall</li>
+</ol>
+<p><img src="/img/cell.jpg" alt="referentes"></p>
+<p>Link: <a href="https://create.arduino.cc/projecthubMostafa7cell-wall-cbad10ref=similar&amp;ref_id=122460&amp;offset=3">https://create.arduino.cc/projecthubMostafa7cell-wall-cbad10ref=similar&amp;ref_id=122460&amp;offset=3</a></p>
+<ol start="3">
+<li>Origami Facade (IAAC)</li>
+</ol>
+<p><img src="/img/PAB3.jpg" alt="referentes"></p>
+<p>Link: <a href="http://www.iaacblog.com/programsorigami-facade-interactive-systems/">http://www.iaacblog.com/programsorigami-facade-interactive-systems/</a></p>
+<ol start="4">
+<li>SURFACE X</li>
+</ol>
+<p><img src="/img/sx.jpg" alt="referentes"></p>
+<p>Link: <a href="https://create.arduino.cc/projecthub/Picaroon/surface-x-811e8c?ref=similar&amp;ref_id=130947&amp;offset=1!">https://create.arduino.cc/projecthub/Picaroon/surface-x-811e8c?ref=similar&amp;ref_id=130947&amp;offset=1!</a></p>
+<ol start="5">
+<li>X CUBE Interaction (MIT)</li>
+</ol>
+<p><img src="/img/pab5.jpg" alt="referentes"></p>
+<p>Link: <a href="https://create.arduino.cc/projecthub/Maya/in-servo-we-trust-6725f1?ref=tag&amp;ref_id=interactive&amp;offset=2">https://create.arduino.cc/projecthub/Maya/in-servo-we-trust-6725f1?ref=tag&amp;ref_id=interactive&amp;offset=2</a></p>
+<p><strong>CACHUREOS ELECTRÓNICOS</strong></p>
+<p>Entre los componentes que poseeo tanto en el kit de arduino entregado el primer semestre como la lista de componentes solicitadas para este ramo (adjuntando imágenes de 3 sensores extra que compré), para este encargo, me dispuse a buscar arduamente en mi casa algunos objetos (tanto electrodomésticos como del uso diario) que pudiera desarmar sin mayor problema para fotografiar/revisar los componentes de sus interiores y entender un poco mejor la unión de todas las piezas que los conforman para quizás utilizar alguno de sus elementos en el proyecto híbrido que debemos realizar. De esta forma, conseguí varias cosas, entre ellas: 1) Un secador viejo (no funcional) que posee unas aspas de ventilador, un motor dc, un puente de Wheatstone, un switch de tres niveles, una placa osb con dos diodos, un cable de red y una trama poligonal de conducción térmica, 2) Un parlante (sin baterías) que posee su cubierta antipolvo  y cono exterior, un cable TRS, un botón, una cajilla para 3 pilas AAA  y una placa osb con tres condensadores de 10V Y 16V, 3) Un pequeño ventilador (funcional, el cual simule en tinkercard a modo de diagrama visual) el que contiene un circuito simple de un motor dc, una &ldquo;lenteja&rdquo;, un diodo, un switch, y una cajetilla para 4 baterías AA más las aspas correspondientes. Además de todo esto, dejo una imágenes de tres objetos más (un joystick de Wii, un control de Wii y unos lentes de realidad virtual) que quizás me podrían ser útiles en mi proyecto pero que aún no se muy bien cómo los podría aplicar (a excepción del primero que me llama mucho la atención para controlar señales),y no menos importante, aún no encuentro el desatornillador específico que se requiere para desarmarlos.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/comp//1.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/comp//1.JPG" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/comp//1.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/comp//2.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/comp//2.JPG" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/comp//2.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/comp//3.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/comp//3.JPG" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/comp//3.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/secador//sec1.jpg');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/secador//sec1.jpg" alt="Sec1" />
+				    </div>
+			      <figcaption>
+		          <p>Sec1</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/secador//sec1.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/secador//sec2.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/secador//sec2.JPG" alt="Sec2" />
+				    </div>
+			      <figcaption>
+		          <p>Sec2</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/secador//sec2.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/secador//sec3.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/secador//sec3.JPG" alt="Sec3" />
+				    </div>
+			      <figcaption>
+		          <p>Sec3</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/secador//sec3.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/secador//sec4.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/secador//sec4.JPG" alt="Sec4" />
+				    </div>
+			      <figcaption>
+		          <p>Sec4</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/secador//sec4.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/secador//sec5.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/secador//sec5.JPG" alt="Sec5" />
+				    </div>
+			      <figcaption>
+		          <p>Sec5</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/secador//sec5.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/secador//sec6.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/secador//sec6.JPG" alt="Sec6" />
+				    </div>
+			      <figcaption>
+		          <p>Sec6</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/secador//sec6.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/speker//sp1.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/speker//sp1.JPG" alt="Sp1" />
+				    </div>
+			      <figcaption>
+		          <p>Sp1</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/speker//sp1.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/speker//sp2.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/speker//sp2.JPG" alt="Sp2" />
+				    </div>
+			      <figcaption>
+		          <p>Sp2</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/speker//sp2.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/speker//sp3.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/speker//sp3.JPG" alt="Sp3" />
+				    </div>
+			      <figcaption>
+		          <p>Sp3</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/speker//sp3.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/ventilador//vent1.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/ventilador//vent1.JPG" alt="Vent1" />
+				    </div>
+			      <figcaption>
+		          <p>Vent1</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/ventilador//vent1.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/ventilador//vent2.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/ventilador//vent2.JPG" alt="Vent2" />
+				    </div>
+			      <figcaption>
+		          <p>Vent2</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/ventilador//vent2.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/ventilador//vent3.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/ventilador//vent3.JPG" alt="Vent3" />
+				    </div>
+			      <figcaption>
+		          <p>Vent3</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/ventilador//vent3.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/extras//1.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/extras//1.JPG" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/extras//1.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/extras//2.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/extras//2.JPG" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/extras//2.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/extras//3.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/extras//3.JPG" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/extras//3.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/bXWgh0xDeyk?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<p><strong>DIAGRAMA ELECTRÓNICO OBJETO/JUGUETE</strong></p>
+<p>Ahora bien, luego de buscar por mi casa algún juguete que tuviera guardado y que fuera posible desarmarlo sin mermar su valor económico, encontré el llamado &ldquo;Robot Sima&rdquo; que es un juguete interactivo para niños (potenciado por un dispositivo móvil y la correspondiente app mediante machine learning y speech recognition) que además de interactuar con ellos mediante sonidos es capaz de caminar y mover sus brazos mediante distintos motores servos en sus extremidades (8 específicamente, dos en sus brazos,dos en los pies y dos en cada rodilla) que reciben las salidas generadas por la placa personalizada de arduino en su interior.</p>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/sima//sima1.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/sima//sima1.JPG" alt="Sima1" />
+				    </div>
+			      <figcaption>
+		          <p>Sima1</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/sima//sima1.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/sima//sima2.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/sima//sima2.JPG" alt="Sima2" />
+				    </div>
+			      <figcaption>
+		          <p>Sima2</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/sima//sima2.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/sima//sima3.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/sima//sima3.JPG" alt="Sima3" />
+				    </div>
+			      <figcaption>
+		          <p>Sima3</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/sima//sima3.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/sima//sima4.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/sima//sima4.JPG" alt="Sima4" />
+				    </div>
+			      <figcaption>
+		          <p>Sima4</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/sima//sima4.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/sima//sima5.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/sima//sima5.JPG" alt="Sima5" />
+				    </div>
+			      <figcaption>
+		          <p>Sima5</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/sima//sima5.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://martinseguelr.github.io//img/sima//sima6.JPG');" >
+				      <img itemprop="thumbnail" src="https://martinseguelr.github.io//img/sima//sima6.JPG" alt="Sima6" />
+				    </div>
+			      <figcaption>
+		          <p>Sima6</p>
+			      </figcaption>
+				    <a href="https://martinseguelr.github.io//img/sima//sima6.JPG" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+<p><em>Componentes:</em></p>
+<ul>
+<li>2 Baterías 3.7V - 680mAh</li>
+<li>1 Placa &ldquo;arduino&rdquo;</li>
+<li>8 Motores servos (SG90 y MG90S)</li>
+<li>Componentes no identificables de un EV2639B-R-00A</li>
+<li>2 Condensadores</li>
+</ul>
+<p><em>Esquemático básico:</em></p>
+<p>Ahora bien, en cuanto a cómo funciona la parte móvil del robot (ya que sus funciones educativas radican en la nube y en la conexión de la placa con un smartphone vía bluetooth), cada uno de los servos incluidos en las extremidades de &ldquo;Sima&rdquo; están conectados al mismo pin ground y de 5V pero difieren en el pin digital correspondiente a cada uno. De esta forma, aunque realmente no sé si las baterías extras incluidas cumplen un rol de &ldquo;backup&rdquo; o completan el suminstro voltáico necesario (ya que en la simulación que realizé más abajo las incluí conectando un suministro de energía de 7.4V al pin &ldquo;Vin&rdquo; de arduino pero al desconectarlo los motores siguen funcionando correctamente), por lo que más me hace sentido es que alimenten a un resorte conectado directamente en la parte superior de la placa que eleva la &ldquo;cabeza&rdquo; del robot. Dado que el juguete cuenta con una placa personalizada (que nunca había visto antes ni mucho menos entenderla todavía por completo) me enfoqué principalmente en diagramar un panorama general de su funcionamiento creando un código sencillo pero eficaz que demostrara los movimientos generados (ya que se incluyen condensadores y otros elementos/chips integrados que no logro reconocer sus unidades/voltajes y/o sus nombres para investigarlos)</p>
+<p><img src="/img/esq_sima.png" alt="referentes"></p>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/elD24KINev2?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<h5 id="7-encargo-07">7. Encargo 07:</h5>
+<p>Durante el proceso de desarollo del proyecto para el mid-term realicé diferentes variaciones con varios componentes buscando cuales se me hacían más cómodos de trabajar y se adaptaban a lo que quería hacer a futuro. Estaba muy indeciso con cual camino tomar, si hacer una fachada, un elemento más artístico o quedarme con un artefacto que interactúa con las personas. Sin más, a continuación dejo los diferentes tinkercards que realicé antes de llegar al circuito con el código final utilizando como bases los servomotores y variando entre diferentes sensores que captan información del ambiente.</p>
+<p><div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/aXMrWDlO73h?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/j0moin9UyUt?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div></p>
+<p><div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/g1L4aPqQvKg?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/dN4Oy46onUp?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<div>
+    <iframe 
+    src='https://www.tinkercad.com/embed/9WzyIU9NOFD?editbtn=1'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div></p>
+<h5 id="8-encargo-08-midterm">8. Encargo 08 (MIDTERM):</h5>
+<p><a href="https://www.canva.com/design/DAEsSia2Edo/view">https://www.canva.com/design/DAEsSia2Edo/view</a></p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+﻿Nombre,Cantidad,Componente
+"U1",1," Arduino Uno R3"
+"M2",1," Motor de CC"
+"BAT1, BAT2",2," Batería de 9 V"
+"K1, K2",2," Relé SPDT"
+"T1, T2",2," Transistor NPN (BJT)"
